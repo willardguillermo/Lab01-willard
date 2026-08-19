@@ -14,6 +14,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.willard.laboratorio00.ui.theme.Laboratorio00Theme
 import androidx.compose.foundation.layout.Column
 import androidx.compose.ui.unit.sp
+import androidx.compose.material3.Button
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +24,7 @@ class MainActivity : ComponentActivity() {
             Laboratorio00Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
-                        name = "Android",
+                        name = "Guillermo Willard",
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -37,6 +38,9 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     Column(modifier=modifier) {
         Text(text= "Hola, soy $name", fontSize = 24.sp)
         Text(text= "Curso: Programacion en moviles",)
+        Button(onClick = {}) {
+            Text(text = "Presioname")
+        }
 
     }
 }
